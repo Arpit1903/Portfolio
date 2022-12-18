@@ -1,0 +1,379 @@
+.body{
+    background-color: lightslategrey;
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+}
+
+.navbar-custom{
+    background-color: rgb(41, 41, 41);
+    color:white;
+}
+
+.logo{
+    width: 120px;
+    height: 40px;
+}
+
+.hello{
+    font-size: small;
+}
+
+.address{
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+#all{
+    width: 50px;
+    color: gray;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-right: -10px;
+    z-index: 2;
+}
+
+form{
+    width: 800px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: -10px;
+    z-index: 1;
+}
+
+form button{
+    margin-left: -15px;
+}
+
+#lang{
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.navbar.ii{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(14, 14, 39);
+    color: white;
+}
+
+.navbar.ii a{
+    color: white;
+}
+
+div.menu{
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.carousel-control-prev{
+    color: black;
+    margin-top: 50px;
+    height: 200px;
+}
+
+.carousel-control-prev-icon{
+    background-color: black;
+    color: black;
+    outline: 2px solid black;
+}
+
+.carousel-control-next{
+    color: black;
+    margin-top: 50px;
+    height: 200px;
+}
+
+.carousel-control-next-icon{
+    background-color: black;
+    color: black;
+    outline: 2px solid black;
+}
+
+.card{
+    padding: 20px;
+}
+
+.card-group{
+    margin-left: 100px;
+    width: 1300px;
+}
+
+.laptop{
+    margin-top: 70px;
+    height: 300px;
+    width: 320px;
+}
+
+.down-sign-in{
+    text-align: center;
+    font-size: small;
+    margin-top: 50px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.down-sign-in button{
+    background-color: goldenrod;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    width:200px;
+    font-weight: bold;
+}
+
+.down-sign-in h6{
+    font-size: small;
+}
+
+.down-sign-in a{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.back-to-top{
+    height: 40px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgb(45, 45, 83);
+}
+
+.back-to-top button{
+    margin-top: 10px;
+    border: 1px solid rgb(45, 45, 83);
+    background-color: rgb(45, 45, 83);
+}
+
+.back-to-top a{
+    text-decoration: none;
+    color:aliceblue
+}
+
+.main-footer{
+    display: flex;
+    background-color: rgb(45, 45, 70);
+    color: aliceblue;
+    padding: 50px;
+    margin-bottom: -50px;
+}
+
+.get-to-know-us{
+    margin-left: 320px;
+}
+
+.connect-with-us{
+    margin-left: 80px;
+}
+
+.make-money-with-us{
+    margin-left: 80px;
+}
+
+.let-us-help-you{
+    margin-left: 80px;
+}
+
+.main-footer a{
+    display: block;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.end-footer{
+    background-color: rgb(45, 45, 70);
+}
+
+.img-lang{
+    margin-left: 45%;
+}
+
+#lang{
+    margin-left: 20px;
+    width: 100px;
+}
+
+.countries{
+    padding: 50px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.countries a{
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 15px;
+    font-size: small;
+    color: antiquewhite;
+}
+
+.basement-footer{
+    display: flex;
+    padding: 50px;
+    background-color: rgb(45, 45, 50);
+}
+
+.inline{
+    padding: 30px;
+    margin-right: 30px;
+}
+
+.inline h6{
+    font-size: small;
+}
+
+.inline h5{
+    margin-top: 30px;
+    font-size: smaller;
+}
+
+.inline a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.basement-footer-ii{
+    background-color: rgb(45, 45, 50);
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.basement-footer-ii h6{
+    display: inline;
+    font-size: small;
+}
+
+.last{
+    margin-left: 30px;
+}
+
+.last a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: small;
+}
+
+.img{
+    margin-left: 20px;
+}
+
+.carsl-brdr{
+    border: 1px solid lightgray;
+    margin: 30px;
+}
+
+.advt img{
+    width: 500px;
+    height: 500px;
+    left: 1200px;
+    margin-top: 100px;
+    z-index: 2;
+}
+
+@media((min-width:300px) and (max-width:599px)){
+    .card-group .card{
+        margin-top: 500px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .carousel{
+        margin-top: 100px;
+    }
+
+    .advt{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    .basement-footer{
+        flex-direction: column;
+    }
+
+    .main-footer{
+        flex-direction: column;
+    }
+
+    .get-to-know-us{
+        margin-left: 80px;
+    }
+
+    .navbar-custom{
+        z-index: 2;
+        color: white;
+    }
+
+    form{
+        width:200px;
+    }
+
+    #navbarSupportedContent{
+        background-color: dimgray;
+    }
+
+    #navbarNav{
+        background-color: dimgray;
+    }
+
+    .form{
+        width: 50px;
+    }
+}
+
+@media((min-width:600px) and (max-width:1199px)){
+    .get-to-know-us{
+        margin-left: 0;
+    }
+
+    .advt{
+        visibility: visible;
+        position: absolute;
+        right: 90px;
+        z-index: 2;
+        margin-top: 300px;
+    }
+
+    .card-group img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .end-footer{
+        visibility: visible;
+    }
+}
+
+@media((min-width:1200px) and (max-width:5000px)){
+    .navbar{
+        width: 1495px;
+    }
+
+    .navbar-custom form{
+        width: 850px;
+    }
+
+    .advt img{
+        position: absolute;
+        right: 120px;
+        top: 500px
+    }
+
+    .card-group img{
+        width: 100px;
+        height: 100px;
+    }
+}

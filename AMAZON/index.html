@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+    <div class="nav">
+        <nav class="navbar navbar-custom navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZgAAAB7CAMAAAB+Qmb/AAAAz1BMVEUlLyX+/v7///8kLyT4nDUyMjAhLCEXJBccKBwTIRMgKiAYJBgABgDFx8UeKR4xOjGvsq/o6ejy8vLj5OOGiobS1NIAFwD/oDZrcGs9Rj1LUksAEQCpq6kOHg4gLSV9gn2Tl5MTKST0mjUAJSThkDOgpKAsNiy8vrzNz83a29pla2VVXFWNkY0ADgBzeHOAhYAAIiQ2OCZsUSmMYixDSkO6ezDTiDJ2VipBPSegbS5dSShQVlCvdS/cjTNQRCjDfzBlTimSZSwwNiaCXCtWRyj4al15AAAURElEQVR4nO2cB1vqShOAYeOXAicBQi8JhBaaeFWkKPbz/3/Tt+kzaaBGjR7muc+9Vwjb3t3Z2ZnZZP53klRK5n/MSVIoBpjMSVInJzAplROYlMoJTErlBCalcgKTUjmBSamcwKRUTmASFV4QpGRKOoFJUHLKbDSaKWwSZZ3AJCdSc5olhIjNJMicwCQn4wkhWYpGzCdQ2AlMYpLvUiyGkHkC+8wJTGIi9BwwFwksmROYxCRfccA0+I+XdgKTmEh3skmGyOMEdv8TmOSE6xJDsssEFswJTJIizMVyWW/xSQzoCUySItVYXknm6H8Ck1I5gUmpnMCkVE5gUirHgmFZiZfoP7lPbxEQhs1JprD/3tw5CowkcIXV3Xw2m9+txoJwLByWU3iWFQJmSs74nFcORC7YvMI0W7TS2bzVZJQkzga2SJzCsSwv0H8f/xvajcNtPiC8onCCIhxlTh8Gwyvns5FYLclZenaSy1VxsToPYcPX2rbUrMbn282FLk4mYmdWE7wRYLh2s0I/F8XRrBYZushxbaarT6ZGpbTW6aTY4GohbPLnf+LkPOi04pXandUusdgtnAtSSO8VpyttwfybFdrzkUjbrI/msC8BEQzh3D+lmiG8M0Bco6OLtIyZUDvM9xAYiZ8VZWKJ4dI2pdxrcv7nltWyLaLhXGX55ZQ4IvfGklveRdX7fLTyl2M1SmhW3F+7tepLzt8f/kLOxol84YPJCw23O2ZPRq3gQI+LTlemPeP3ufHC+43cK0S6KMe9EZVFwS5RuhOr1epkmTe7NNezbpf0WWi/0RjEgmGFlmgsFJ/QDi2wgmIyZa+3Ok+1hQ5+R8hkZfWGW4mgOEJKSyVYK88tyiRQK/1AbAn4SQHUGirlAhp2xd8d2oKi5Buk/IX3e7mVy/DjKmrzdOZrhduajvWjnk2O080/SxQuq4xkOB5y8dCiiQUjZTrBAbKLrjbxZJS9akVWalbx74i8Mh7nZlniK6dY81evzKZRlZIFrlQohT7o/aIMo4kSMwrjLV/UcKE9ryvyXOLnsr/NjfD5roiWE7Nof82bfxOZyUgF0TcedPziycSBkQrV8BEyi56uUMkIjDIJ9H9Khyg/k4PjMvJpBm6Zja6UjNBsfRMYaSyGdodkRyxcVxhMngnUQeRZqDaLBCNx1aDWmTKxRlQMGKk5jes2KTOwOxCM0gv+kOhtdhwyjiS7RPOvtojmYpBZwKffAkYaR3WHLlu40WAwgh7S5lKojRgJhi86kRqwYokeewiIBsMIQcy4eUU4eyGYu8DCMBWAUgydsCVYDO9Xdv6nszBu+wYw7DiwikHbigA3BtMIW2VkFKbMosAoFasMut2UyyXiQrqI2KsOgAlM++CKhmMEwOidUACTVviYk6WnGHLN8qFaRbAjvAFM+KxwniMVzwhBYFqhsxPvXQfAlMbm2NBtpbIShGbPaTMpx53NIsFIeM9z7FbUvCIwqQCYacSkj1iBRPQaWCv6KiWBSuWZNx0Ogpk6Vhm39G2+uFhaqtsIBKYXMZnCosdRYHTrP0vBONCyAuMoR6yWjwWDhoiaLp1uY1kRfb0BkxdgjLIYoj72pl+uKaNaJ4tlo9sr4Vp7XndCzGVctG5rC7YwRQWXiqNiGT5MJu0QMNlsBHmfERIHhp6mjDk9dU19ibU/p1bS28GwYzCOJLtQlDzPc+crpGkIWNABmzIwSlFfgG1DGMGxmq7aQp7nlFoPDSFI2+KX1SkWvMxlxz5RUMGl2R9FUf7MYGeIa4MgMCSizVOX42EwJhdwbpEKVsUku4omEwXGTfkwC+g6h418C01pEN2WfYNd0jt6KYiGZKfiRMaLh7hqZAy0HZkUnI+VDhpWoEX4cQHKeImal3V1hQCnmTy3PhbuwHogVSeFQuj551ip2Otg/UzkN6wYo80teLbg7BpITHZAFBgOWIlk5O0lNTT1el7zfFO1e15Tau1FYB0VV39q7VoDLzxn92dXXu9J1uWSyRXgCBI0zVggkoI0D9GdduNFcOF8rFzAYp1W+MCQbK+tCMp5BTGXm8FTSAyYBubI2yuxGOL3OAAGzV3eGwp+DpsHCsabw9xqiND199FyzwrzEhope0j4GagUNromwscLUQqAx6aD649BO4xnENATAQTumHsYDDXzBXOAhAoCE5JtGQmGTHwA7P5QBRfRk5g9pujtp1WgT9kV3OV1r2AZA7PL/IOXhujOVaScKs6KaQEHYxecrvGMD5ms1lNdqG5ItuGUgA5HcN+GNjTJ2huSD0zR6eM5pJgNMcui95ilz1NgVxFnMEeBYfj5slecTMslWYaakIUHDXimgLy86eTrZMspSWohMM5WkCvMKiO9atQ6GYPWcBfw8VU4GKmJ1enIbRy0KUi25f2cX4Y0A88C2d0dFFRKyPYQCWbqj8DkrXpJKfpiQPQBU8oLSo0vrOZo0bIFCGYSDqbsNoRvwLk69QabC1sxRrQgr9QUpnk3K8DRz0OVSFoRYJDzhFbmdroNNVkWqA90WHNsawym6moh2AhqDwXdZZFgRv6thLf8CUS+i/RkHorH0B0V/TZ3DBhPw0nI8NG9WfYHetIv/ActWimaSseAqeHFabmz7U7C2YEUcxNtPtb8xWDc1YwokmwleDiMBBMYfruo0J3KafPRyRislOcEjm8eAcbT4jl48CEdT7v/gWMVkx2f4zlB4IXDYHzeedLzZqk0h5XpcPoywIHmDBMG4w1drgUtlsrRK4bIAWvFnq/Q3+CXI8AwFInSVprz5aJT1KvZw2CAakILDGy7f+DzIWqB1spztTbToptORxfLh8CwDPIdEx1MRW4Bf43O7AIy96x9A4KhRrs7qNiP9wYw1cCTLpjoewFHxPyFwrzbqcqyHDgBR4HpRoDpHQ2GFTKr2UIv00qDfq0wMAJynBJ5DJ5B/kvYCPoV3Jds3xUCU/LAsO8Fowf0lb34PgCGFZSZDsLvWKLAeBYLBgOcdrFg+HahNylFVBoKhmtgS7kLR58LGX1bsNneMbUcAgPslXeDKQa2ow+DMZ3UEdHlGDCNcDBww4wBw3Iz0e9TPgAmh0NwcDMzCkT6Co0ods5Z1j8GA4p5N5iA++aDYNjaMiL6fjyYZhSYbBSYvKLL8bUGweBgCymh2GoGhciwCegzjYNgwP7wbjCdhMHkCsWwBJlPBqM0QrCgD4JglAXa+eQ57i50L/lMQGwXlE1LGoPxBictYFh/BkFIuCN5MFzD56YOatIAGKngs5R9A1GoRq6Yw2DAgKQDDDsWUW8JKYnFXne5hCfGxMHgTdxYn1W9s+g20FbgA8NmUDSfTPydxSum8sPBKD77U581WUXIc8ec/N8NRmoirzMpLVpjTuHyyjIGjOI78rf81ineY2LATH8AGH6O1PZ01rZ8/0f5yt4NhkeGLRmN7XzPOJdMfo4sZZhW4TQCWWWL6M1/8gM2fwbNsgnnFMAe45J5LxgJzgZ6GHFzzmPA4Gg+HZVgV/E5Bu1A2FzWg+eYtIHB7iUQGP1UMDU0gsB3EgOm7T/yBx3p+OTfUSK/smpMNRh8Il54fck1P2/zRzkyRAYDiLcCCCa/xEf+sORVDsUedRg1xC6ZbtAlkzYwNeQ1BOc1HMFMFgwHI5DovCxEWWUoG8CY82F3kSQUwET5LTzafmYB73LawPjm7h/QSRTzTxaMgJcp2KSxjgNgcGYxKStjRmjXlDwO50goFQvGY1AyQNkKjaYZDA/T8lFoiUPafhKajPFeMNAmwyFCDi1gL0Qi4Ax0IpfkUqk0KV7MmyzIE8cRTJDMJcEsayf/Ls1g8kipVIFWbqO1DxwWSYCZRIDBQTAvNU9qBq7bOFISe8220wysCUErcMy/Fwwtpw0MV4HjVj53v5Bwwh8IjSYARkIndKDKfMEWJwbJsHEJ/CQ7WY6thuAsGZgqDdeok32TZjD5C2TreGBQqqkx+9w6kwCDzk6etczy2Bfm5ItJwXtQPjZTK78NbyWym2XDMrDVjlWQZjA8NkLdixzCzJ96nyQYbCK512ZY3nd3yMk6QUZ0BBoro0tA5rabKcYha6PLfRCM8Plg8B0MMrXuWzLCXeD2ijuvEwCTx1EV+/Qk1UZ+p7ZsXYL2Ld9QNHbmG4/ssplVsoLN6EJI7nLaVkyGwcqj2qzl84rQDV6hzDoXRZMwl7E3MttrCxzXXgWjQmSSMQZRCb0ghZ+0HMa+bH+5qyhCDZt04dn+aVsxmRqOxRBZv+iOyiE3XNxshSRUGd4zSHba61b0sH3EUmZvAMOi+yO05FGviLoDEvveBoZjx7zd3a9YMciLkXXt0LCu28osATAMjzVlTKVZ/m1gfOntgZJh1PMtYHLCQpyIDQvqV6wY5BILjAr6w44IJuHEFKJ3c4JPkmUhBEzYlTIHTCbs9jH4Jbio+gYwxo1bQ6ybCV/i9ueiNlZCRtC/7HrRkwDDRk4HUsJ3zUx3twvGOVXSY797XcD+xgXjCw/4+oQcc8eDsVtAiHmx4CtWDK0zvB8kWzm/cweVagBHNScSKMtHvHyBmkyeg54QsW1ZZc6wkPJk1GgKbeOVOm2lOetNpnb+kwcmw8fd84ce5+PBsI4LlUyMnn1NaJmfh81eItM1794qI+V5kueYjGk9hRgYZLLi3bc30CWbsewNg5WxTgwoCu++zsB44VVh1jNfRwPAZPhVeDIWIZ2oN2McAJNbuWAyzJdlyXCrciA/heoQxdikzdlL/+K9ciMyMVFc7TAYRugFK812jBWStzPks4uac+AwKIqNmsIHfP0UzvnceM/SBF66YENejUNIqYsvunJHg2FYexFaNzi+RpXRcptFmEZmzM2FdS+SzYjGXNXH6AUMnng57EaKQOglsXP4PLwEJCzRm5eMPJm5dd2GN6KqRPbecMI2dX3OR3ZNElojEV/u4cx3dSEssu5/xRe1SD2Z4LwyX1+MV2Cbk8V8rw5dMZYpYBfI2X8HwbAtKwE4+75sf7Y2L5bclmQni4IThGeNm4Ad+Bo4qVIuOaKDy2BcpRTxOXge3avihMXEcxOXizP3BVzCrERKc9BLVol/ybEUeGNbXrkQgQ+aFt8KvMyOLUzcppXhnMkvAn3hemZi19JsFD8z+zR1RpufTY2/qyGXYNieWUpxHPjGkfjcZZ4b33V7nWKn150XGBAdZKW5L0tI8i52I43NF8I/j3reeAcg25wtRsXOaLFcjTkeljUvRE6xI4WTmsuO+dK7qdibjwPvpjM6x3j309HXIX3hVxc9x4ltX273fmP9nQmpguHDeo6eOHSjzLjxpyhC3v/CUClQnXur+4OfG1/xnFErx+fwl6wU3hNV1bTB4D9TBgNNU9WYLuV4pcYxY1apCRHFRTct+AWbF/Is+t7/fESia3jPXfkNr/fVBpe3r7ub9fCsXq/3h4/756utFofGFCbd3f7xYFSN2Tze9ymSM1tMOvvLg2TSLR8Fo401LbHGvF1U7Wnf95h4Ul8PvrFZCcgHwaib4foqVqN/qmgPN/0QKob0f7Qe+DAYbUcVx+PD4HvQqM9RWCiY7c/WZR9dMdt1/azevzlis01etOe6KWf9oSNn9RMYS0wyFM2e+fpVo10P1zf75+vN09+H7eXLy+X272Y3tNH0f/ju/2GrTNVuzM32bP/w5auGnl5MUV2hf9xYZPrfaZMkIB83l1V1Zw5Ffbj/FoXmb85fC8zwv+9uycckiXPMYGPtwfX6/mnw3WzUbd9sy82/bS5boj3Ymr3eX1+9fAsaVVMt3aVurZY8//OqzBD1ZV93jt33u8vBF59sVG1wtb95NVGoD1ZLrr5fq35IEnLJqOr10LNUb7502aja9vqezogzk4y2Mdtx/8Ot5eR8ZdrtPfBWremy+RI2dLE83Vhzor43wZimSP3xh2uyBJ2YqrbrA19VfX39oH0yG7qtPO1cV1nf1F7avVn95gTGE+12CD0k9eHj68unsTHOLNvnteuTqfdNTaZuh+afP51Lsm5/TcPOK8OP9vxXjY9bvUeoAnu52t0Dt3J9vTVZaNeWVvvhxnLi8Rjtdo19ifV6/37/dJkgHLpSMtvN4xBOgXr/+cUq3zr493+6TZZ8oEzVXod+jy+F87h7YgaG6+RjhRsR5MvNfn2GQzCef1vN9H/F1v8ZEUztchd0xlM2/fXu6uHlQDw+Wgwolw+b3X3/zFd6/f7VLVO7Mm2y2x+/YD4jtKwO/u7DgooGnfXN7unyv4HleDyyOMMzORhsr3ZmBDlQaH/34q0P7bH+OxbM58T81ejIojGy/fX+enO7fVEHcXxMX/FAe9nebq736/7ZWWgEub+/BHaf+jA0dpi/P3/BfFYyhqpdPYauGgdPvT9crx93r1cPl4wWJurLw9Pr7nG9HsJEC38x+1tkjmvXxoLZ/YIF83lZMuogOh4P+JjSH96vHx9vbDFhON/F/bq/3/qic/8NDcP5F6yXT01fUtWHfT9mYMMhxcPwHj/r7wKROXVLfzv86V4ySz41r0zVmOf1cQP9NqEH12sm6FPQ9pTX7W9QZJ+e8Gd4s26GfgP3g1TOhvu/TMjwq9thvf/0O7h8QSamOthexxkCb6RS799sXsITP9S/Z8PfwuVLUmSNo+HrevhxOHStPG4y0X5R9eX7cg+Tli/KXaZsHq4fQ48iRy8VaoVttvHe6l+D5SuTylV6fL/dvWvhGJ7Qx+vLwWfHd9IkX5vtT8207dXzut8/du2YjoLhzevt5b8ExZAvv4Zh+lm25nWWuEOLdfC8f9w/P738927P5w+W77kfoxoul63hc6F8hsO+ISYP8/+MJOT1/nlzuzXcNf8eE1O+8eKS5aUcaMzlw9+nq83m9fV1s9lc3T5sL9XBmxzQv1HScKPMyTr28pC/uUFpkDSAOUmInMCkVE5gUionMCmVE5iUyglMSsUEc5IUCgVzklTK/wFPtDji7cV9PwAAAABJRU5ErkJggg==" alt="amazon logo" class="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16"  > 
+                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg>
+                        <div class="hello" style="display: inline-block;margin-top: 20px;">Hello</div><div class="address" style="display: block;">Select your Address</div></a>
+                  </li>
+                  <form class="d-flex" role="search">
+                    <select name="all" id="all">
+                        <option value="all">All</option>
+                        <option value="all">Alexa</option>
+                        <option value="all">Amazon devices</option>
+                        <option value="all">Books</option>
+                        <option value="all">Cars & accessories</option>
+                        <option value="all">Men</option>
+                        <option value="all">Women</option>
+                    </select>
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-warning" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg>
+                    </button>
+                  </form>
+                  <li class="nav-item">
+                    <select name="lang" id="lang">
+                        <option value="lang"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAh1BMVEX/Zx8Eajj/////YhD/mHsAZTB6moAAAIgAAIDT0+bk5O/e3u0AAIXX1+nh4e7r6/TKyeD4+Pzw8PaOjr2VlMTNzd5DQpyJibrFxd+lpMxsbKh4d7aurtOzs9W6uteZmcYkI5F1dK5cXKc0M5hiYqoYGI4UE499fLU8PJpwb7AfHpBOTqFUVKNEXlScAAABxUlEQVRoge2W2W7bMBBF1enCVeImk9RiK7HsME78/99XpkjhtmgRpyaRlzlPFAQdCJdDzjQNgiAIgiAIgnwEnyvSfKlIAxW5Xq50OHh/CFoVl7enI6Xy4UFSejy1ReUmSUqCdkI4HQiVyZSTd6v0cWcUcA7K7KKXKy8lF0dCVI5iC0LAnCNShBxFGbl9IouFtoXZMGbml5VdyNMVyVwh38s7iAC90SyjzQL58U4eSsg1feZgBugG3m82PR86GAzwZ6oLyD1ljIMNJrC0nVObFxY4Y9TfLheUtBAHq0Z2Pzk33bNR2SFCS+ibe/qmfKA5BLBu0SfXZ9yoF2dz6ecXN8v3tBPzlik9uiWkFJZ+1IptZ9HR/c1yInNlW+3SFJwnxLswJafzr8+S3Cynq+KCsc3s+kQyqXfzhjHB1UrLyZef8qWc/DWW8GssoVQslw3ty2/opRTH8qVY9RDl499WO/4Q6flvF9eZxgJyOFS8cl+bhfizWdgi8qpt7keDftxdGvTuUa7dNd+9Z7SIL6NFzKMFCQVHC/h9KJquieQ98jzOxXD2/hxi+XHuv2i+VaT5WpHmU0VQjnKUoxzlKEc5ylGO8n/xHYZoTfmGclNQAAAAAElFTkSuQmCC" alt="Indian Flag" class="lang-flag" width="20" height="15"></option>
+                        <option value="lang">En-english</option>
+                        <option value="lang">Hi-hindi</option>
+                    </select>
+                  </li>
+                  <li class="nav-item dropdown" style="margin-left: 10px;margin-top: 10px;">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <div class="hello">Hello, Sign in</div> <div class="address">Account and Lists</div>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item" style="margin-top:10px;margin-left: 10px;"> 
+                    <a class="nav-link"><div class="hello">Returns</div><div class="address">& Orders</div>  </a>
+                  </li>
+                  <li class="nav-item" style="margin-top: 25px; margin-left: 10px;">
+                    <a href="https://www.amazon.in/gp/cart/view.html?ref_=nav_cart" style="text-decoration: none; display: flex;">
+                    <button type="button" class="btn btn-dark position-relative" >
+                        <img src="data:image/jpeg;base64,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" alt="cart image" width="30" height="30">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            2
+                          <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </button>
+                    Cart</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div class="nav2">
+        <nav class="navbar navbar-custom navbar-expand-lg ii">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#" style="font-size:medium;">
+                <div class="menu"></div>
+                <div class="menu"></div>
+                <div class="menu"></div>
+                <div style="margin-top: -20px; margin-left: 30px; font-weight: bold;">All</div></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" style="color: white;">Best Sellers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Mobiles</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Today's Deals</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Customer Service</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Books</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Electronics</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">Prime</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="" class="dropdown-item">Prime Video</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Fashion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">New Releases</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home & Kitchen</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Amazon Pay</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="margin-left: 30px;">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IN-hq/2021/img/Mobile_Traffic_/XCM_Manual_1321458_1651511_IN_3781247_400x39_en_IN._CB655944656_.jpg" alt="" width="300">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+  </div>  
+  <div class="container-fluid">
+    <div class="carousel" style="z-index:1;">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://m.media-amazon.com/images/I/61aURrton0L._SX3000_.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://m.media-amazon.com/images/I/71fi7+WurWL._SX3000_.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://m.media-amazon.com/images/I/71z-Ne0jZ0L._SX3000_.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://m.media-amazon.com/images/I/610f2ewvX-L._SX3000_.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://m.media-amazon.com/images/I/71cp9PVuTfL._SX3000_.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://m.media-amazon.com/images/I/71QVUpcaPhL._SX3000_.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://m.media-amazon.com/images/I/71HVyMMRdqL._SX3000_.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="card-group" style="margin-top: -300px;">
+      <div class="card" style="margin-left: 20px;z-index:2;">
+        <h5>Up to 70% off| Clearance store</h5>
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Electronics/Clearance/Clearance_store_Desktop_CC_1x._SY304_CB628315133_.jpg" alt="" style="margin-top:50px;" class="laptop">
+        <div class="card-body" style="margin-top: 50px;">
+          <a href="#" class="card-1" style="text-decoration:none;">See More</a>
+        </div>
+      </div>
+      <div class="card" style="margin-left: 20px;z-index:2;">
+        <h5 align="center">Car & bike essentials| Up to 60% off</h5>
+        <div class="carnbike-1" style="display:flex; margin-top: 50px;">
+          <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Rim_tyrecare1x._SY116_CB410830552_.jpg" alt="" height="130" width="140" style="margin-right: 10px;">
+          <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Glasscare1X._SY116_CB410830553_.jpg" alt="" width="140" style="margin-left: 10px;">
+          
+        </div> 
+        <div class="carnbike-2" style="display:flex; margin-top: 20px;">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vega_helmet_186x116._SY116_CB405090404_.jpg" alt="" height="130" width="140" style="margin-top: 10px;">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vaccum1x._SY116_CB410830552_.jpg" alt="" height="130" width="140" style="margin-left:20px; margin-top: 10px;">
+        </div>
+        <div class="card-body" style="margin-top: 40px;">
+          <a href="#" class="card-1" style="text-decoration:none;">See More</a>
+        </div>
+      </div>
+      <div class="card" style="margin-left: 20px;z-index:2;">
+        <h5>Shop & Pay| Earn rewards daily</h5>
+        <div class="Earn-first" style="display:flex; margin-top: 50px;">
+          <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonPay/Rewards/GWBTFPercolateCards/PC_Quard_Card_186X116_ScratchCard._SY116_CB627364845_.jpg" alt="..." height="130" width="150">
+          <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonPay/Rewards/GWBTFPercolateCards/PC_Quard_Card_186X116_CollectedOffers._SY116_CB627364845_.jpg" alt="" height="130" width="150" style="margin-left: 10px;">
+        </div>
+        <div class="Earn-second" style="display:flex; margin-top:30px;">
+          <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonPay/Rewards/GWBTFPercolateCards/PC_Quard_Card_186X116_WinMore._SY116_CB627364845_.jpg" alt="" height="130" width="150">
+          <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/APay_Rewards/Rewards0.5x._SY116_CB633810016_.jpg" alt="" height="130" width="150" style="margin-left: 10px;">
+        </div>
+        <div class="card-body" style="margin-top: 60px;">
+          <a href="#" class="card-1" style="text-decoration:none;">See More</a>
+        </div>
+      </div>
+      
+      <div class="card" style="margin-left: 20px; margin-right: 20px; height: 150px;z-index:2;">
+          <h5>Sign in for your best experience</h5>
+          <div class="card-body">
+            <button style="background-color: gold;border: 1px solid black; border-radius: 10px; width: 100%;"><a href="#" class="card-1" style="text-decoration:none;">Sign in securely</a></button>
+          </div>
+      </div>    
+      <div class="advt">
+        <img src="https://m.media-amazon.com/images/G/31/img19/AMS/Houseads/Laptops-Sept2019._CB436595915_.jpg" alt="">
+      </div>
+    </div>
+  </div>
+    
+  <div class="container-fluid">
+    <div class="carsl-brdr">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <h5>Up to 40% off | Refurbished activity trackers</h5>
+        <div class="carousel-item active" >
+          <img src="https://m.media-amazon.com/images/I/61E-q0eaoxL._AC_SY200_.jpg" alt="..." class="img">
+          <img src="https://m.media-amazon.com/images/I/61W4meSdVQL._AC_SY200_.jpg" alt="" class="img">
+          <img src="https://m.media-amazon.com/images/I/51ToMhOMj+L._AC_SY200_.jpg" alt="" class="img">
+          <img src="https://m.media-amazon.com/images/I/51xmcMQEE8L._AC_SY200_.jpg" alt="" class="img">
+          <img src="https://m.media-amazon.com/images/I/616NaqQIeKL._AC_SY200_.jpg" alt="" class="img">
+          <img src="https://m.media-amazon.com/images/I/51iOZafmiZL._AC_SY200_.jpg" alt="" class="img">
+          <img src="https://m.media-amazon.com/images/I/61eenQ6rFPL._AC_SY200_.jpg" alt="" class="img">
+          <img src="https://m.media-amazon.com/images/I/61f-B-uQI2L._AC_SY200_.jpg" alt="" class="img">
+        </div>
+        <div class="carousel-item">
+          <img src="https://m.media-amazon.com/images/I/616NaqQIeKL._AC_SY200_.jpg" alt="" class="img">
+          <img src="https://m.media-amazon.com/images/I/51iOZafmiZL._AC_SY200_.jpg" alt="" class="img">
+          <img src="https://m.media-amazon.com/images/I/61eenQ6rFPL._AC_SY200_.jpg" alt="" class="img">
+          <img src="https://m.media-amazon.com/images/I/61f-B-uQI2L._AC_SY200_.jpg" alt="" class="img">
+          <img src="https://m.media-amazon.com/images/I/61rnt2KDgpL._AC_SY200_.jpg" alt="..." class="img">
+          <img src="https://m.media-amazon.com/images/I/51ElfKwgQsL._AC_SY200_.jpg" alt="" class="img">
+          <img src="https://m.media-amazon.com/images/I/71ZSpNjEl0L._AC_SY200_.jpg" alt="" class="img">
+          <img src="https://m.media-amazon.com/images/I/3178PqHrQoS._AC_SY200_.jpg" alt="" class="img">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+    <div class="container-fluid">
+    <div class="footer">
+      <div class="down-sign-in">
+        <h6>See personalized recommendations</h6>
+        <button>Sign in</button>
+        <h6>New customer? <a href="">Start here.</a></h6>
+      </div>
+      <div class="back-to-top">
+        <button><a href="#">Back to top</a></button>
+      </div>
+
+      <div class="main-footer">
+        <div class="get-to-know-us">
+          <h6>Get to Know Us</h6>
+          <a href="">About Us</a>
+          <a href="">Careers</a>
+          <a href="">Press Releases</a>
+          <a href="">Amazon Cares</a>
+          <a href="">Gift a Smile</a>
+          <a href="">Amazon Science</a>
+        </div>
+        <div class="connect-with-us">
+          <h6>Connect with Us</h6>
+          <a href="">Facebook</a>
+          <a href="">Twitter</a>
+          <a href="">Instagram</a>
+        </div>
+        <div class="make-money-with-us">
+          <h6>Make Money with Us</h6>
+          <a href="">Sell on Amazon</a>
+          <a href="">Sell under Amazon Accelerator</a>
+          <a href="">Amazon Global Selling</a>
+          <a href="">Become an Affiliate</a>
+          <a href="">Fulfilment by Amazon</a>
+          <a href="">Advertise Your Products</a>
+          <a href="">Amazon Pay on Merchants</a>
+        </div>
+        <div class="let-us-help-you">
+          <h6>Let Us Help You</h6>
+          <a href="">COVID-19 and Amazon</a>
+          <a href="">Your Account</a>
+          <a href="">Returns Center</a>
+          <a href="">100% Puchase Protection</a>
+          <a href="">Amazon App Download</a>
+          <a href="">Amazon Assistant Download</a>
+          <a href="">Help</a>
+        </div>
+      </div>
+      <div class="end-footer">
+        <hr style="margin-top: 50px; margin-bottom: 50px; color: antiquewhite;">
+        <div class="img-lang">
+          <a href=""><img src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Symbol.jpg" alt="" width="80px" height="40px">
+          <select name="lang" id="lang"></a>
+            <option value="lang">English-en</option>
+            <option value="lang">Hindi-hi</option>
+          </select>
+        </div>
+        <div class="countries">
+          <a href="">Australia</a>
+          <a href="">Brazil</a>
+          <a href="">Canada</a>
+          <a href="">China</a>
+          <a href="">France</a>
+          <a href="">Germany</a>
+          <a href="">Italy</a>
+          <a href="">Japan</a>
+          <a href="">Mexico</a>
+          <a href="">Netherlands</a>
+          <a href="">Poland</a>
+          <a href="">Singapore</a>
+          <a href="">Spain</a>
+          <a href="">Turkey</a>
+          <a href="">United Arab Emirates</a>
+          <a href="">United Kingdom</a>
+          <a href="">United States</a>
+        </div>
+      </div>
+      <div class="basement-footer">
+        <div class="inline">
+          <a href=""><h5>AbeBooks</h5>
+          <h6>Books, art and collectibles</h6></a>
+          <a href=""><h5>Shopbop</h5>
+          <h6>Designer Fashion Brands</h6></a>
+        </div>
+        <div class="inline">
+          <a href=""><h5>Amazon Web Services</h5>
+          <h6>Scalable Cloud Computing Services</h6></a>
+          <a href=""><h5>Amazon Business</h5>
+          <h6>Everything for Your Business</h6></a>
+        </div>
+        <div class="inline">
+          <a href=""><h5>Audible</h5>
+          <h6>Download Audio Books</h6></a>
+          <a href=""><h5>Prime Now</h5>
+          <h6>2-hour Delivery on Everyday Items</h6></a>
+        </div>
+        <div class="inline">
+          <a href=""><h5>DPReview</h5>
+          <h6>Digital Photography</h6></a>
+          <a href=""><h5>Amazon Prime Music</h5>
+          <h6>90 million songs, ad-free Over 15 million podcast episodes</h6></a>
+        </div>
+        <div class="inline">
+          <a href=""><h5>IMDb</h5>
+          <h6>Movies, TV & Celebrities</h6></a>
+        </div>
+      </div>
+      <div class="basement-footer-ii">
+        <div class="last">
+          <a href="">Conditions of Use & Sale</a>
+        </div>
+        <div class="last">
+          <a href="">Privacy Notice</a> 
+        </div>
+        <div class="last">
+          <a href="">Interest-Based Ads</a>
+        </div>
+        <div class="last">
+          &copy; <h6>1996-2022, Amazon.com, Inc. or its affiliates</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,253 @@
+body{
+    background-color: mintcream;
+}
+
+.halfPage{
+    display: flex;
+}
+
+.instaPhoto{
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 300px;
+    height: 550px;
+    margin-left: 350px;
+    margin-top: 20px;
+}
+
+.instaPhoto2{
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 300px;
+    height: 550px;
+    margin-left: 450px;
+    margin-top: -500px;
+
+}
+
+.mySlides{
+    display: none;
+}
+
+.slideshow-container{
+    margin-left: 2px;
+    margin-top: -55px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.insidePhoneImg{
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 300px;
+    height: 550px;
+    margin-left: 450px;
+    margin-top: -500px;
+}
+
+#img3{
+    height: 530px;
+}
+
+#img4{
+    height: 530px;
+}
+
+.form{
+    margin-top: -20px;
+    padding: 50px;
+    margin-right: 270px;
+}
+
+.insideForm{
+    background-color: white;
+    border: 2px solid lightgray;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.signup{
+    background-color: white;
+    margin-top: 20px;
+    border: 2px solid lightgray;
+    padding-left: 65px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+}
+
+h4{
+    text-align: center;
+}
+
+.app-store{
+    display: inline;
+    background-color: black;
+    color: white;
+    margin-left: 30px;
+}
+
+.play-store{
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.top-footer{
+    text-decoration: none;
+    font-size: smaller;
+    color: gray;
+    margin-left: 20px;
+}
+
+.middle{
+    margin-top: 10px;
+}
+
+.middle-footer{
+    text-decoration: none;
+    font-size: smaller;
+    color: gray;
+    margin-left: 20px;
+}
+
+.end{
+    margin-top: 20px;
+}
+
+.select{
+    background-color: white;
+    border: 0px solid white;
+    font-size: smaller;
+    color: gray;
+    cursor: pointer;
+}
+
+h5{
+    display: inline;
+    color: gray;
+    font-size: smaller;
+    font-weight: lighter;
+}
+
+.instaWritten{
+    width: 200px;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+input{
+    margin-top: 5px;
+    background-color: rgb(246, 242, 242);
+    border: 1px soild rgb(246, 242, 242);
+    width: 250px;
+    height: 30px;
+}
+
+.login{
+    margin-top: 10px;
+    width: 258px;
+    height: 30px;
+    font-size: small;
+    font-weight: bold;
+    background-color: rgb(13, 166, 254);
+    color: white;
+    border: 1px solid rgb(13, 166, 254);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.or{
+    font-size: small;
+    color: gray;
+    margin-top: 10px;
+    display: flex;
+}
+
+.left{
+    background-color: lightgrey;
+    width: 100px;
+    margin-left: 0;
+}
+
+.right{
+    background-color: lightgrey;
+    width: 100px;
+    margin-right: 0;
+}
+
+.fb{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.fb>a{
+    text-decoration: none;
+    color: rgb(0, 0, 81);
+}
+
+.forgotPasswd{
+    margin-top: 20px;
+    text-align: center;
+    font-size: small;
+}
+
+.forgotPasswd>a{
+    text-decoration: none;
+    color: rgb(3, 3, 76);
+}
+
+.apple{
+    margin-left: 50px;
+    display: inline;
+    width: 130px; 
+    height: 40px;
+}
+
+.google{
+    margin-left: 20px;
+    display: inline;
+    width: 130px;
+    height: 40px;
+}
+
+@media((min-width:300px) and (max-width:600px)){
+    .phone{
+        visibility: hidden;
+        position: absolute;
+        top:0; 
+    }
+
+    .insideForm{
+        width: 250px;
+        padding: 5;
+        padding-left: 5;
+    }
+
+    .halfPage{
+        display: inline-block !important;
+    }
+
+    body{
+        min-height: 100vh;
+    }
+}
+
+@media((min-width:600px) and (max-width:1200px)){
+    .phone{
+        margin-left: -300px;
+    }
+}

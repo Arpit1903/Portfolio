@@ -1,0 +1,43 @@
+body{
+    background: url("./yvette-de-wit-NYrVisodQ2M-unsplash.jpg");
+    background-size: cover;
+}
+
+.buttons{
+    text-align: center;
+}
+
+.btn{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 1px solid black;
+    transition: all 0.07s;
+    margin-left: 50px;
+    margin-top: 350px;
+}
+
+.btn:hover{
+    background-color: darkgray;
+    border: 5px solid black;
+}
+
+.playing{
+    transform:scale(1.5);
+    border-color: darkgoldenrod;
+    box-shadow: 0 0 10px darkgoldenrod;
+    background-color: darkgray;
+    border: 5px solid black;
+}
+
+kbd{
+    display:block;
+    color: white;
+    font-size: 40px;
+}
+
+.sound{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
