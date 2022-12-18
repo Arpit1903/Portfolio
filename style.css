@@ -1,0 +1,476 @@
+.navbar{
+    position: sticky;
+    display: flex;
+    direction: rtl;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    background-color: goldenrod;
+    z-index: 30;
+}
+
+.nav-content{
+    margin-top: 45px;
+    margin-left: 50px;
+    z-index: 30;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    z-index: 30;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.heading h2{
+    margin-top: 50px;
+}
+
+.heading h1{
+    margin-top: 250px;
+}
+
+.myPhoto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myPhoto img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.developerLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.developerLogo img{
+    width: 500px;
+    height: 500px;
+    z-index: 10;
+}
+
+.bgimg img{
+    position: relative;
+    width: 1500px;
+    z-index: 10;
+}
+
+.bgimg{
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 10;
+}
+
+.aboutme{
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    font-size: 25px;
+    z-index: 10;
+}
+
+.card-group{
+    display: flex;
+    position: absolute;
+    top: 300px;
+    bottom: 50px;
+    left: 300px;
+    visibility: visible;
+    color: black;
+    height: 600px;
+    width: 900px;
+    background-color: white;
+    z-index: 10;
+}
+
+.head{
+    color: blueviolet;
+}
+
+.recent .work{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 250px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    z-index: 10;
+}
+
+.recent .proj{
+    display: flex;
+}
+
+.recent .proj2{
+    display: flex;
+}
+
+.proj .card{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 500px;
+    height: 300px;
+}
+
+.proj2 .card{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 500px;
+    height: 300px;
+}
+
+.proj .card img{
+    margin-left: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+.proj2 .card img{
+    margin-left: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+.proj2 .card {
+    text-align: center;
+}
+
+.recent .intern{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.text{
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.recent img{
+    width: 300px;
+    margin-left: 43.3%;
+    z-index: 10;
+}
+
+.hl{
+    border-bottom: 2px solid lightgray;
+    margin-top: 100px;
+    width: 1200px;
+    margin-left: 150px;
+}
+
+.contact{
+    position: relative;
+    text-align: center;
+    border: 2px solid lightgray;
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    background-color: goldenrod;
+    z-index: 20;
+}
+
+.content{
+    display: flex;
+    position: absolute;
+    bottom: 150px;
+    left: 38%;
+}
+
+.svg{
+    margin-top: 50px;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+.svg:hover{
+    background-color: grey;
+}
+
+.phone{
+    font-size: 30px;
+    position: absolute;
+    bottom: 50%;
+    left: 45%;
+}
+
+.recent .proj a{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.chat{
+    position: absolute;
+    border: 2px solid grey;
+    border-radius: 10%;
+    background-color: bisque;
+    width: 30%;
+    height: 180px;
+    top: -30px;
+    left: 550px;
+}
+
+.links{
+    display: flex;
+    position: absolute;
+    bottom: -80px;
+}
+
+.link{
+    font-size: 20px;
+    margin-left: 65px;
+}
+
+.top{
+    position: fixed;
+    margin-left: 1400px;
+    margin-top: 500px;
+    z-index: 30;
+}
+
+@media((min-width:100px) and (max-width:299px)){
+    .developerLogo img{
+        width: 270px;
+    }
+    .bgimg img{
+        width: 260px;
+        height: 800px;
+    }
+    .card-group{
+        position: absolute;
+        top: 500px;
+        left: 5px;
+        width: 250px;
+        height: 1620px;
+    }
+    .recent{
+        margin-top: 1350px;
+    }
+    .proj .card{
+        margin-left: 0px;
+        width: 90px;
+    }
+    .proj2 .card{
+        margin-left: 0px;
+        width: 90px;
+        height: 560px;
+        text-align: center;
+    }
+    .proj .card img{
+        margin-left: 0px;
+        width: 40px;
+        height: 40px;
+    }
+    .proj2 .card img{
+        margin-left: 0px;
+        width: 40px;
+        height: 40px;
+    }
+    .recent img{
+        margin-left: 1%;
+        width: 250px;
+    }
+    .hl{
+        width: 200px;
+        margin-left: 30px;
+    }
+    .chat{
+        left: 35px;
+        height: 150px;
+    }
+    .chat input{
+        width: 70%;
+    }
+    .phone{
+        left: 30px;
+        font-size: large;
+    }
+    .content{
+        left: 0px;
+    }
+    .content .svg{
+        margin-left: 30px;
+    }
+    .content .links{
+        left: 0px;
+    }
+    .content .links .link{
+        margin-left: 30px;
+        font-size: medium;
+    }
+}
+
+@media((min-width:300px) and (max-width:699px)){
+    .bgimg img{
+        position: relative;
+        width: 400px;
+        height: 700px;
+        z-index: 10;
+    }
+    .card-group{
+        position: absolute;
+        top: 420px;
+        left: 0;
+        width: 400px;
+        height: 1000px;
+    }
+    .recent{
+        margin-top: 750px;
+    }
+    .proj .card{
+        margin-left: 0px;
+        width: 140px;
+    }
+    .proj2 .card{
+        margin-left: 0px;
+        width: 140px;
+    }
+    .proj .card img{
+        margin-left: 15px;
+        width: 50px;
+        height: 50px;
+    }
+    .proj2 .card img{
+        margin-left: 15px;
+        width: 50px;
+        height: 50px;
+    }
+    .recent img{
+        margin-left: 10%;
+    }
+    .hl{
+        border-bottom: 2px solid lightgray;
+        margin-top: 100px;
+        margin-left: 40px;
+        width: 300px;
+    }
+    .chat{
+        left: 150px;
+    }
+    .chat input{
+        width: 80px;
+    }
+    .content{
+        left: -10px;
+    }
+    .phone{
+        left: 40px;
+    }
+    .top{
+        margin-left: 350px;
+        margin-bottom: -50px;
+    }
+}
+@media((min-width:700px) and (max-width:1279px)){
+    .bgimg img{
+        position: relative;
+        width: 800px;
+        z-index: 10;
+    }
+    .card-group{
+        position: absolute;
+        left: 40px;
+        width: 730px;
+    }
+    .recent{
+        margin-top: 550px;
+    }
+    .proj .card img{
+        margin-left: 10px;
+        width: 100px;
+        height: 100px;
+    }
+    .proj2 .card img{
+        margin-left: 10px;
+        width: 100px;
+        height: 100px;
+    }
+    .hl{
+        border-bottom: 2px solid lightgray;
+        margin-top: 100px;
+        width: 500px;
+    }
+    .chat{
+        left: 300px;
+    }
+    .top{
+        margin-left: 700px;
+    }
+    .contact{
+        height: 700px;
+    }
+    .content{
+        position: absolute;
+        top: 200px;
+        left: 200px;
+    }
+    .phone{
+        position: absolute;
+        top: 170px;
+        left: 280px;
+    }
+    .links{
+        position: absolute;
+        top: 100px;
+    }
+}
+@media((min-width:1280px) and (max-width:1300px)){
+    .bgimg img{
+        position: relative;
+        width: 1200px;
+        z-index: 10;
+    }
+    .hl{
+        border-bottom: 2px solid lightgray;
+        margin-top: 100px;
+        width: 1000px;
+        margin-left: 150px;
+    }
+    .card-group{
+        position: absolute;
+        left: 180px;
+    }
+    .proj .card img{
+        margin-left: 30px;
+        width: 200px;
+        height: 200px;
+    }
+    .proj2 .card img{
+        margin-left: 30px;
+        width: 200px;
+        height: 200px;
+    }
+    .contact{
+        width: 1250px;
+    }
+    .top{
+        position: fixed;
+        margin-left: 1100px;
+        margin-top: 500px;
+        z-index: 30;
+    }
+}
